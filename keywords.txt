@@ -1,0 +1,3 @@
+ACS712   KEYWORD1
+getACcurrent    KEYWORD2
+getDCcurrent     KEYWORD2
