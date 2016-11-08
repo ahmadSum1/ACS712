@@ -8,4 +8,4 @@
   
   Released into the public domain.
   
-  The objective is to simplify the calculations specially for AC measerements and provide discreate functions to simply get the desired values.
+  The objective is to simplify the calculations especially for AC measurements and provide discrete functions to simply get     the desired values.
