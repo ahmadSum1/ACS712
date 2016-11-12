@@ -1,6 +1,7 @@
 
 /*
 Measuring AC Current Using ACS712
+put ACS712.cpp and ACS712.h files in the same folder
 */
 
 #include "ACS712.h"
