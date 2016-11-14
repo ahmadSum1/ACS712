@@ -1,0 +1,6 @@
+{
+  "name": "Acs712",
+  "tagline": "Arduino library for ACS712 Hall Effect-Based Linear Current Sensor.",
+  "body": "# ACS712\r\n\r\n\r\n  Arduino Library for using ACS712 Hall Effect-Based Linear Current Sensor IC.\r\n  Created by Sakib Ahmed Sumdany, November 8, 2016.\r\n  based on a tutorial found at \r\n  http://henrysbench.capnfatz.com/henrys-bench/arduino-current-measurements/acs712-arduino-ac-current-tutorial/\r\n  \r\n  Released into the public domain.\r\n  \r\n  The objective is to simplify the calculations especially for AC measurements and provide discrete functions to simply get     the desired values.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
