@@ -33,12 +33,26 @@ ACS712::ACS712(int pin)
   AmpsRMS = 0;
 
 }
+ACS712::ACS712(int pin, float error)
+{
+  _pin = pin;
+  _error=error;
+  sensorIn = _pin;
+  mVperAmp = 66; // use 100 for 20A Module and 66 for 30A Module
+  
+  
+  Voltage = 0;
+  VRMS = 0;
+  AmpsRMS = 0;
 
+}
 double ACS712::getACcurrent()
 {
    Voltage = getVPP();
    VRMS = (Voltage/2.0) *0.707; 
    AmpsRMS = (VRMS * 1000)/mVperAmp;
+   AmpsRMS-=_error;
+   if(AmpsRMS<.10) return 0.00f;
    return AmpsRMS;
    
 }
@@ -55,7 +69,7 @@ float ACS712::getVPP()
   int minValue = 1024;          // store min value here
   
    uint32_t start_time = millis();
-   while((millis()-start_time) < 1000) //sample for 1 Sec
+   while((millis()-start_time) < 900) //sample for 1 Sec
    {
        readValue = analogRead(sensorIn);
        // see if you have a new maxValue
@@ -64,6 +78,7 @@ float ACS712::getVPP()
            /*record the maximum sensor value*/
            maxValue = readValue;
        }
+       
        if (readValue < minValue) 
        {
            /*record the maximum sensor value*/

@@ -15,10 +15,12 @@ class ACS712
   public:
     ACS712();
     ACS712(int pin);
+    ACS712(int pin, float error);
     double getACcurrent();
     void getDCcurrent();
   private:
     int _pin;
+    float _error;
     int sensorIn;
     int mVperAmp;
     
