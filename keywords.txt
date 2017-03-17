@@ -1,3 +1,24 @@
-ACS712   KEYWORD1
+#######################################
+# Syntax Coloring Map ACS712 
+# by Sakib Ahmed
+# 	github: @ahmadSum1
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+ACS712		KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
 getACcurrent    KEYWORD2
-getDCcurrent     KEYWORD2
+getDCcurrent    KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+#################*x*###################
