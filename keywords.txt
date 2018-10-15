@@ -8,14 +8,14 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-ACS712		KEYWORD1
+ACS712	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-getACcurrent    KEYWORD2
-getDCcurrent    KEYWORD2
+getACcurrent	KEYWORD2
+getDCcurrent	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
